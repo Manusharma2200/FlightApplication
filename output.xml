@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191220 17:50:58.906" generator="Robot 3.1.2 (Python 2.7.10 on win32)">
+<suite source="C:\Users\kanik\Demo\TestSuite1.robot" id="s1" name="TestSuite1">
+<test id="s1-t1" name="TestScalarVariable">
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${var1}</arg>
+<arg>${var2}</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.158" starttime="20191220 17:50:59.158"></status>
+</kw>
+<tags>
+<tag>DefaultTag1</tag>
+<tag>ForceTag1</tag>
+</tags>
+<status status="PASS" endtime="20191220 17:50:59.159" critical="yes" starttime="20191220 17:50:59.157"></status>
+</test>
+<test id="s1-t2" name="TestLIstVariable">
+<kw type="setup" name="SetupDemo">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>This is a setup method</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.166" starttime="20191220 17:50:59.165"></status>
+</kw>
+<status status="PASS" endtime="20191220 17:50:59.166" starttime="20191220 17:50:59.165"></status>
+</kw>
+<kw name="Should Not Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<arguments>
+<arg>@{user}[0]</arg>
+<arg>@{user}[1]</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.167" starttime="20191220 17:50:59.167"></status>
+</kw>
+<kw type="teardown" name="TeardownDemo">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>This is a teardown demo</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.169" starttime="20191220 17:50:59.168"></status>
+</kw>
+<status status="PASS" endtime="20191220 17:50:59.169" starttime="20191220 17:50:59.168"></status>
+</kw>
+<tags>
+<tag>ForceTag1</tag>
+<tag>TCTag1</tag>
+</tags>
+<status status="PASS" endtime="20191220 17:50:59.169" critical="yes" starttime="20191220 17:50:59.163"></status>
+</test>
+<test id="s1-t3" name="TestDictionaryVariable">
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>&amp;{credentials}[username]</arg>
+<arg>&amp;{credentials}[password]</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.174" starttime="20191220 17:50:59.173"></status>
+</kw>
+<tags>
+<tag>DefaultTag1</tag>
+<tag>ForceTag1</tag>
+</tags>
+<status status="PASS" endtime="20191220 17:50:59.174" critical="yes" starttime="20191220 17:50:59.172"></status>
+</test>
+<test id="s1-t4" name="TemplateTestCase">
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>2</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20191220 17:50:59.180" level="FAIL">2 != 4</msg>
+<status status="FAIL" endtime="20191220 17:50:59.180" starttime="20191220 17:50:59.180"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>6</arg>
+<arg>6</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.181" starttime="20191220 17:50:59.181"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>4</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20191220 17:50:59.182" level="FAIL">4 != 5</msg>
+<status status="FAIL" endtime="20191220 17:50:59.182" starttime="20191220 17:50:59.182"></status>
+</kw>
+<tags>
+<tag>DefaultTag1</tag>
+<tag>ForceTag1</tag>
+</tags>
+<status status="FAIL" endtime="20191220 17:50:59.182" critical="yes" starttime="20191220 17:50:59.176">Several failures occurred:
+
+1) 2 != 4
+
+2) 4 != 5</status>
+</test>
+<test id="s1-t5" name="TestUserdefinedresources">
+<kw name="Comparetwovariables" library="Userdefinedresource_Keywords">
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${var11}</arg>
+<arg>${var22}</arg>
+</arguments>
+<status status="PASS" endtime="20191220 17:50:59.187" starttime="20191220 17:50:59.187"></status>
+</kw>
+<status status="PASS" endtime="20191220 17:50:59.187" starttime="20191220 17:50:59.186"></status>
+</kw>
+<tags>
+<tag>DefaultTag1</tag>
+<tag>ForceTag1</tag>
+</tags>
+<status status="PASS" endtime="20191220 17:50:59.188" critical="yes" starttime="20191220 17:50:59.186"></status>
+</test>
+<status status="FAIL" endtime="20191220 17:50:59.189" starttime="20191220 17:50:58.910"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="4">Critical Tests</stat>
+<stat fail="1" pass="4">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="3">DefaultTag1</stat>
+<stat fail="1" pass="4">ForceTag1</stat>
+<stat fail="0" pass="1">TCTag1</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TestSuite1" pass="4">TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,12 @@
+*** Settings ***
+Library           SeleniumLibrary
+Resource          CommonKeywords.txt
+Resource          ExcelDataFetch.txt
+
+*** Variables ***
+${var11}          5
+${var22}          5
+
+*** Keywords ***
+Comparetwovariables
+    Should Be Equal As Integers    ${var11}    ${var22}
